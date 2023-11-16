@@ -1,0 +1,92 @@
+*** Starting uWSGI 2.0.23 (64bit) on [Thu Nov 16 12:05:38 2023] ***
+compiled with version: Apple LLVM 15.0.0 (clang-1500.0.40.1) on 16 November 2023 11:02:07
+os: Darwin-23.0.0 Darwin Kernel Version 23.0.0: Fri Sep 15 14:41:43 PDT 2023; root:xnu-10002.1.13~1/RELEASE_ARM64_T6000
+nodename: Mac-Studio.local
+machine: arm64
+clock source: unix
+detected number of CPU cores: 10
+current working directory: /Users/rafa/repos/upc/aidl-2023-winter-mlops/session-5/theory-example
+detected binary path: /Users/rafa/.pyenv/versions/3.11.3/envs/session-4/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 10666
+your memory page size is 16384 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on localhost:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:49163 (port auto-assigned) fd 3
+Python version: 3.11.3 (main, Nov  1 2023, 13:10:54) [Clang 15.0.0 (clang-1500.0.40.1)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x100eb2c40
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 291584 bytes (284 KB) for 3 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x100eb2c40 pid: 8477 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8477)
+spawned uWSGI worker 1 (pid: 8531, cores: 1)
+spawned uWSGI worker 2 (pid: 8532, cores: 1)
+spawned uWSGI worker 3 (pid: 8533, cores: 1)
+spawned uWSGI http 1 (pid: 8534)
+*** Starting uWSGI 2.0.23 (64bit) on [Thu Nov 16 12:05:43 2023] ***
+compiled with version: Apple LLVM 15.0.0 (clang-1500.0.40.1) on 16 November 2023 11:02:07
+os: Darwin-23.0.0 Darwin Kernel Version 23.0.0: Fri Sep 15 14:41:43 PDT 2023; root:xnu-10002.1.13~1/RELEASE_ARM64_T6000
+nodename: Mac-Studio.local
+machine: arm64
+clock source: unix
+detected number of CPU cores: 10
+current working directory: /Users/rafa/repos/upc/aidl-2023-winter-mlops/session-5/theory-example
+detected binary path: /Users/rafa/.pyenv/versions/3.11.3/envs/session-4/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 10666
+your memory page size is 16384 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (localhost:8080).
+bind(): Address already in use [core/socket.c line 769]
+gateway "uWSGI http 1" has been buried (pid: 8534)
+...brutally killing workers...
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /Users/rafa/repos/upc/aidl-2023-winter-mlops/session-5/theory-example
+closing all non-uwsgi socket fds > 2 (max_fd = 256)...
+found fd 3 mapped to socket 0 (127.0.0.1:49163)
+running /Users/rafa/.pyenv/versions/3.11.3/envs/session-4/bin/uwsgi
+*** Starting uWSGI 2.0.23 (64bit) on [Thu Nov 16 12:07:15 2023] ***
+compiled with version: Apple LLVM 15.0.0 (clang-1500.0.40.1) on 16 November 2023 11:02:07
+os: Darwin-23.0.0 Darwin Kernel Version 23.0.0: Fri Sep 15 14:41:43 PDT 2023; root:xnu-10002.1.13~1/RELEASE_ARM64_T6000
+nodename: Mac-Studio.local
+machine: arm64
+clock source: unix
+detected number of CPU cores: 10
+current working directory: /Users/rafa/repos/upc/aidl-2023-winter-mlops/session-5/theory-example
+detected binary path: /Users/rafa/.pyenv/versions/3.11.3/envs/session-4/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 10666
+your memory page size is 16384 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on localhost:8080 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:49176 (port auto-assigned) fd 4
+Python version: 3.11.3 (main, Nov  1 2023, 13:10:54) [Clang 15.0.0 (clang-1500.0.40.1)]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x104eeac40
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 291584 bytes (284 KB) for 3 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x104eeac40 pid: 8477 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 8477)
+spawned uWSGI worker 1 (pid: 9392, cores: 1)
+spawned uWSGI worker 2 (pid: 9393, cores: 1)
+spawned uWSGI worker 3 (pid: 9394, cores: 1)
+spawned uWSGI http 1 (pid: 9395)
+Thu Nov 16 12:07:25 2023 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 16 12:07:25 2023 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Thu Nov 16 12:07:25 2023 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!

@@ -1,0 +1,7 @@
+python main.py
+gunicorn -b localhost:8080 -w 1 'main:app'
+gunicorn -b localhost:8080 -w 3 'main:app'
+uwsgi --http localhost:8080 --master -p 3 --thunder-lock --enable-threads -w main:app --disable-loggin
+uwsgi --http localhost:8080 --master --gevent 100 --thunder-lock -w main:app --disable-logging
+
+
